@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Twitter Feed</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<!-- STYLES -->
+
+	<!-- All Styles -->
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	
+	<!-- Early Explorers -->    
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/ie.css" />
+    <![endif]-->
+
+	<!-- JAVASCRIPTS -->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<!-- Homemade -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+<style>
+	
+	#twitter * {
+		margin: 0;
+		padding: 0;
+		font-family: Impact,Arial,Helvetica,sans-serif;
+	}
+	
+	#twitter {
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 570px;
+		height: 100px;
+		transition: 600ms;
+	}
+	
+	#twitter .twitter-hashtag {
+		color: #fff;
+		height: 50px;
+		margin-top: 25px;
+		padding: 5px 1.5%;
+		float: left;
+		width: 22%;
+		height:100%;
+	}
+	
+	#twitter #twitter-feed {
+		list-style: none;
+		font-family:sans-serif;
+		padding: 0 1%;
+		position:relative;
+		float:right;
+		overflow: hidden;
+		width: 70%;
+		height:100%;
+	}
+	
+	#twitter .tweet {
+		position:absolute;
+		background-color: rgba(255,255,255,0.8);
+		opacity: 0;
+		bottom: 0;
+		width: 95%;
+		height: 90px;
+		padding: 5px 10px;
+		right: 0;
+		transition: 600ms;
+		margin-bottom: -250px;
+	}
+	
+	#twitter .tweet.current {
+		opacity: 1;
+		margin-bottom: 0;
+		display: block;}
+	
+	#twitter .tweet.previous {
+		margin-bottom: 1%;
+		margin-right: -75%;	
+	}
+	
+	#twitter .tweet-text {
+		margin: 0;
+		font-size: 1.1em;
+	}
+	
+	#twitter .tweet-user {
+		text-align: right;
+		padding: 3px 6px;
+		font-size:.8em;
+		margin: 0;
+		font-weight: bold;
+		color: #333;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+	
+	#twitter .tweet-user a {
+		color: #333;
+		text-decoration: none;
+	}
+
+	#twitter .tweet-user a:hover {
+		text-decoration: underline;
+	}
+
+	#twitter .tweet-user img {
+		padding-right: 3px;
+		margin-bottom: -2px;
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<header id="header">Twitter Feed</header>
+
+	
+	
+	<footer></footer>
+
+	<script id="twitter-feed-script" data-hashtag="TheEdgeTV" type="text/javascript" src="js/script.js?v=16"></script>
+</body></html>
