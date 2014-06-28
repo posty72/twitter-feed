@@ -1,8 +1,8 @@
 <?php
 session_start();
-require_once("twitteroauth/twitteroauth/twitteroauth.php"); //Path to twitteroauth library
+require_once("path/to/twitteroauth.php"); //Path to twitteroauth library
  
-$search = "?f=realtime&q=%23WorldCup%20lang%3Aen&src=typd";
+$search = "?f=realtime&q=%23TheEdgeTV%20lang%3Aen&src=typd";
 $notweets = 15;
 $consumerkey = "XXXXXXXXXXXXXXXX";
 $consumersecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
